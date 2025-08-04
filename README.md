@@ -47,7 +47,7 @@ Intern-Dashboard/
 1. **Clone this repo**
 bash
 git clone https://github.com/your-username/Intern-Dashboard.git
-cd intern-portal-ejs
+cd Intern-Dashboard
 
 install dependencies
 cmd
