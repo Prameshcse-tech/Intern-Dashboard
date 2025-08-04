@@ -1,5 +1,70 @@
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #f9f9f9;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.info-card {
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: #eaf4fc;
+  border-left: 5px solid #2196f3;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+button {
+  background-color: #155487;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.rewards {
+  margin-top: 30px;
+}
+
+.reward-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.reward-card {
+  flex: 1 1 45%;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.reward-card h3 {
+  margin: 0 0 10px;
+  color: #4caf50;
+}
+
+.reward-card p {
+  margin: 0;
+  color: #555;
 }

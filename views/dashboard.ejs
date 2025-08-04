@@ -1,18 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intern Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Welcome, <%= name %>!</h1>
-  <p><strong>Referral Code:</strong> <%= referralCode %></p>
-  <p><strong>Total Donations:</strong> ₹<%= totalDonations %></p>
+  <div class="container">
+    <h1 class="title">Welcome, <%= name %> 👋</h1>
+    
+    <div class="info-card">
+      <p><strong>Referral Code:</strong> <span id="referral"><%= referralCode %></span>
+        <button onclick="copyReferral()">Copy</button>
+      </p>
+      <p><strong>Total Donations Raised:</strong> ₹<%= totalDonations %></p>
+    </div>
 
-  <h3>🎁 Rewards</h3>
-  <ul>
-    <li>Free course access</li>
-    <li>Top performer badge</li>
-  </ul>
+    <div class="rewards">
+      <h2>🎁 Rewards</h2>
+      <div class="reward-list">
+        <div class="reward-card">
+          <h3>Free Course Access</h3>
+          <p>Get access to premium courses on completion of 5 referrals.</p>
+        </div>
+        <div class="reward-card">
+          <h3>Top Performer Badge</h3>
+          <p>Earn this badge by raising ₹3000 or more.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function copyReferral() {
+      const text = document.getElementById("referral").innerText;
+      navigator.clipboard.writeText(text);
+      alert("Referral Code Copied!");
+    }
+  </script>
 </body>
 </html>
