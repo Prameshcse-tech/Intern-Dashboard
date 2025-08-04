@@ -16,7 +16,8 @@ A fully functional intern dashboard built with **Node.js**, **Express**, and **E
 
 Dashboard Preview
 
-<img width="926" height="583" alt="image" src="https://github.com/user-attachments/assets/70bb594c-57f5-4e73-af5c-833985901355" />
+<img width="988" height="611" alt="image" src="https://github.com/user-attachments/assets/bc4917dc-fd3d-4af5-acb2-b836af7ff9c7" />
+
 
 
 ---
