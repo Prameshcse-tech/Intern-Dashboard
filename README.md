@@ -52,7 +52,7 @@ cd Intern-Dashboard
 install dependencies
 cmd
 npm install
-npm run
+node server.js
 
 ---
 ## Author
